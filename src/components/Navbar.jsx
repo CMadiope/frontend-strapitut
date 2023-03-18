@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg text-black '>
+    <div className='w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg text-black relative'>
       <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
         <div className='text-4xl ml-10 md:ml-3 '>TWC</div>
         <div className='flex item-center '>

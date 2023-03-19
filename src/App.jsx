@@ -16,7 +16,11 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<Home blogs={data ? data : ""} />} />
-        <Route path='/blog/:id' element={<BlogContent />} />
+        <Route
+          path='/blog/:id'
+          element={<BlogContent />}
+          blogs={data ? data : ""}
+        />
       </Routes>
     </div>
   );

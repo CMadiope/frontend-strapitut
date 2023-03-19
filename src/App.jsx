@@ -10,12 +10,12 @@ function App() {
   if (loading) return <h1>Loading ...</h1>;
   if (error) return <h1>Error ...</h1>;
 
-  console.log(data);
+  
 
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home blogs={data ? data : ""} />} />
         <Route path='/blog/:id' element={<BlogContent />} />
       </Routes>
     </div>
